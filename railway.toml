@@ -1,0 +1,7 @@
+[build]
+builder = "dockerfile"
+
+[deploy]
+startCommand = "node server.js"
+healthcheckPath = "/"
+restartPolicyType = "on_failure"
